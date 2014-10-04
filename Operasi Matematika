@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <conio.h>
+main()
+
+{
+    int pilihan,pilihan2;
+    float a,b,hasil;
+    do
+{
+    printf("\n Nama: ANDRI SEPTIAN");
+    printf("\n NIM: 3143111079");
+    printf("\n\n\n");
+    printf("PRAKTIKUM PROGRAM OPERASI MATEMATIKA \n");
+    printf("\n1. PERKALIAN");
+    printf("\n2. PENGURANGAN");
+    printf("\n3. PENJUMLAHAN");
+    printf("\n4. PEMBAGIAN");
+    printf("\nMasukkan angka pilihan yang mau dioperasikan : ");
+    scanf("%d",&pilihan);
+    if (pilihan==1)
+{
+    printf("\nPERKALIAN");
+    printf("\n=================");
+    printf("\nMasukkan angka pertama ");
+    scanf("%f",&a);
+    printf("Masukkan angka kedua ");
+    scanf("%f",&b);
+    hasil=a*b;
+    printf("\nHasil perkalian %4.2f * %4.2f = %4.2f",a,b,hasil);
+}
+    else if(pilihan==2)
+{
+    printf("\nPENGURANGAN");
+    printf("\n=================");
+    printf("\nMasukkan angka pertama ");
+    scanf("%f",&a);
+    printf("Masukkan angka kedua ");
+    scanf("%f",&b);
+    hasil=a-b;
+    printf("\nHasil Pengurangan %4.2f - %4.2f = %4.2f",a,b,hasil);
+}
+    else if(pilihan==3)
+{
+    printf("\nPENJUMLAHAN");
+    printf("\n=================");
+    printf("\nMasukkan angka pertama ");
+    scanf("%f",&a);
+    printf("Masukkan angka kedua ");
+    scanf("%f",&b);
+    hasil=a+b;
+    printf("\nHasil Penjumlahan %4.2f + %4.2f = %4.2f",a,b,hasil);
+}
+    else if(pilihan==4)
+{
+    printf("\nPEMBAGIAN");
+    printf("\n=================");
+    printf("\nMasukkan angka pertama ");
+    scanf("%f",&a);
+    printf("Masukkan angka kedua ");
+    scanf("%f",&b);
+    if(b==0)
+    printf("\nTidak bisa di bagi dengan nol");
+    else {
+    hasil=a/b;
+    printf("\nHasil Pembagian %4.2f / %4.2f = %4.2f",a,b,hasil);
+}
+    else
+}
